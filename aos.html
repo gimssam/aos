@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="ko">
+    <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="mcssam">
+        <meta name="description" content="Full Page Scroll , 포트폴리오">
+        <title>Portfolio Full-Page-Scroll - AVENGERS</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="./images/favicon/montblanc_fav32.png">
+        <link
+            rel="apple-touch-icon=precomposed"
+            href="./images/favicon/montblanc_fav180.png">
+        <!--[if lt IE 9]><script src="./js/html5shiv.js"></script><![endif]-->
+        <!--[if lt IE 9]><script src="./js/respond.src.js"></script><![endif]-->
+        <!--[if lt IE 10]><script src="./js/PIE.js"></script><![endif]-->
+        <!-- JS 플러그인 파일 -->
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <script src="./js/prefixfree.min.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
+        <!-- Jquery Full-Page-Scroll 플러그인 -->
+        <!-- <script src="./js/full-page-scroll.js"></script> -->
+        <!-- Jquery AOS 효과 플러그인 -->
+        <script src="./js/aos.js"></script>
+        
+        <!-- 페이지 JS -->
+        
+        <!-- 기본 코딩 CSS -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+        <link rel="stylesheet" href="./css/font.css">
+        <!-- Jquery Full-Page-Scroll CSS -->
+        <!-- <link rel="stylesheet" href="./css/full-page-scroll.css"> -->
+        <!-- Jquery AOS 효과 CSS -->
+        <link rel="stylesheet" href="./css/aos.css">
+
+        <!-- 페이지 CSS -->
+
+        <!-- AOS 구현 코딩 -->
+        <!-- AOS Script -->
+        <script>
+            $(document).ready(function () {
+                AOS.init();
+            });
+        </script>
+        <!-- AOS CSS -->
+        <style>
+            #wrap {
+                width: 75%;
+                margin: 0 auto;
+                height: 100vh;
+                background: #111;
+                color: #fff;
+                text-align: center;
+                padding: 240px;
+                line-height: 3;
+            }
+            .fade, .flip, .slide, .zoom {
+                width: 75%;
+                margin: 0 auto;
+            }
+            /* Animation Fade */
+            .fade div {
+                width: 300px;
+                height: 200px;
+                background: #222;
+                line-height: 200px;
+                text-align: center;
+                color: #fff;
+                font-weight: bold;
+                margin: 120px 24px;
+                text-transform: capitalize;
+            }
+            /* Animation Flip */
+            .flip div {
+                width: 300px;
+                height: 200px;
+                background: #333;
+                line-height: 200px;
+                text-align: center;
+                color: #fff;
+                font-weight: bold;
+                margin: 120px 24px;
+                text-transform: capitalize;
+            }
+            /* Animation Slide */
+            .slide div {
+                width: 300px;
+                height: 200px;
+                background: #444;
+                line-height: 200px;
+                text-align: center;
+                color: #fff;
+                font-weight: bold;
+                margin: 120px 24px;
+                text-transform: capitalize;
+            }
+            /* Animation Zoom */
+            .zoom div {
+                width: 300px;
+                height: 200px;
+                background: #555;
+                line-height: 200px;
+                text-align: center;
+                color: #fff;
+                font-weight: bold;
+                margin: 120px 24px;
+                text-transform: capitalize;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <h1>
+                세로로 긴 웹 페이지가 있을 경우,
+                <br>
+                화면을 벗어나는 경우 스크롤하면 밑에 있는 콘텐츠를 볼 수 있음.
+                <br>
+                그 보여지는 콘텐츠에 애니메이션 효과를 주는 라이브러리
+                <br>
+                AOS(Animate on scroll library)
+            </h1>
+            <h2>속성 설정</h2>
+            <!-- delay와 duration은 0부터 3000까지 가능하고, 50 단위로 설정-->
+            <!-- <div
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center">
+            </div> -->
+            <h3>애니메이션 효과</h3>
+            <!-- data-aos="fade-up"의 fade-up을 flip-up, slide-up 등으로 변경하면 애니메이션 효과가 바뀜-->
+            <!-- <p>
+                #1. Fade animations
+                <br>
+                fade, fade-up, fade-down, fade-left, fade-right, fade-up-right, fade-up-left,
+                fade-down-right, fade-down-left
+                <br>
+                #2. Flip animations
+                <br>
+                flip-up, flip-down, flip-left, flip-right
+                <br>
+                #3. Slide animations
+                <br>
+                slide-up, slide-down, slide-left, slide-right
+                <br>
+                #4. Zoom animations
+                <br>
+                zoom-in, zoom-in-up, zoom-in-down, zoom-in-left, zoom-in-right, zoom-out,
+                zoom-out-up, zoom-out-down, zoom-out-left, zoom-out-right
+                <br>
+            </p> -->
+        </div>
+
+        <!-- AOS EFFECT BOX -->
+
+        <!-- Animation Fade -->
+        <div class="fade">
+            <div data-aos="fade">
+                slide-up
+            </div>
+            <div data-aos="fade-up">
+                fade-up
+            </div>
+            <div data-aos="fade-down">
+                fade-down
+            </div>
+            <div data-aos="fade-left">
+                fade-left
+            </div>
+            <div data-aos="fade-up-right">
+                fade-up-right
+            </div>
+            <div data-aos="fade-up-left">
+                fade-up-left
+            </div>
+            <div data-aos="fade-down-right">
+                fade-down-right
+            </div>
+            <div data-aos="fade-down-left">
+                fade-down-left
+            </div>
+        </div>
+
+        <!-- Animation Flip -->
+        <div class="flip">
+            <div data-aos="flip-up">
+                flip-up
+            </div>
+            <div data-aos="flip-down">
+                flip-down
+            </div>
+            <div data-aos="flip-left">
+                flip-left
+            </div>
+            <div data-aos="flip-right">
+                flip-right
+            </div>
+        </div>
+
+        <!-- Animation Slide -->
+        <div class="slide">
+            <div data-aos="slide-up">
+                slide-up
+            </div>
+            <div data-aos="slide-down">
+                slide-down
+            </div>
+            <div data-aos="slide-left">
+                slide-left
+            </div>
+            <div data-aos="slide-right">
+                slide-right
+            </div>
+        </div>
+
+        <!-- Animation Zoom -->
+        <div class="zoom">
+            <div data-aos="zoom-in">
+                zoom-in
+            </div>
+            <div data-aos="zoom-in-up">
+                zoom-in-up
+            </div>
+            <div data-aos="zoom-in-down">
+                zoom-in-down
+            </div>
+            <div data-aos="zoom-in-left">
+                zoom-in-left
+            </div>
+            <div data-aos="zoom-in-right">
+                zoom-in-right
+            </div>
+            <div data-aos="zoom-out">
+                zoom-out
+            </div>
+            <div data-aos="zoom-out-up">
+                zoom-out-up
+            </div>
+            <div data-aos="zoom-out-down">
+                zoom-out-down
+            </div>
+            <div data-aos="zoom-out-left">
+                zoom-out-left
+            </div>
+            <div data-aos="zoom-out-right">
+                zoom-out-right
+            </div>
+        </div>
+
+        <!-- 페이지 JS -->
+
+
+
+
+
+
+
+
+
+
+    <!-- 페이지 JS -->
+    </body>
+</html>
